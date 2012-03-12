@@ -1,7 +1,7 @@
 // IconFamily.h
 // IconFamily class interface
 // by Troy Stephens, Thomas Schnitzer, David Remahl, Nathan Day, Ben Haller, Sven Janssen, Peter Hosey, Conor Dearden, Elliot Glaysher, and Dave MacLachlan
-// version 0.9.3
+// version 0.9.4
 //
 // Project Home Page:
 //   http://iconfamily.sourceforge.net/
@@ -9,7 +9,7 @@
 // Problems, shortcomings, and uncertainties that I'm aware of are flagged with "NOTE:".  Please address bug reports, bug fixes, suggestions, etc. to the project Forums and bug tracker at https://sourceforge.net/projects/iconfamily/
 
 /*
-    Copyright (c) 2001-2006 Troy N. Stephens
+    Copyright (c) 2001-2010 Troy N. Stephens
     Portions Copyright (c) 2007 Google Inc.
 
     Use and distribution of this source code is governed by the MIT License, whose terms are as follows.
@@ -173,6 +173,10 @@
 // class method, so you don't need an instance of IconFamily to invoke it.)
 
 + (BOOL) removeCustomIconFromFile:(NSString*)path;
+
+//Same as the -removeCustomIconFromFile: method, but for folders (directories).
+
++ (BOOL) removeCustomIconFromDirectory:(NSString*)path;
 
 @end
 
